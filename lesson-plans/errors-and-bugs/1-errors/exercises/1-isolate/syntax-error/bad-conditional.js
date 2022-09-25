@@ -6,27 +6,30 @@ console.log('--- in execution phase ---');
 
 
 /*
-  environment:
+  environment: chrome
 
-  name:
-  message:
+  name: SyntaxError
+  message: Unexpected token '{'
 
-  location:
+  location:index.js:63 
 
-  life cycle:
+  life cycle: in execution phase 
 
-  the mistake:
+  the mistake: creation phase error:
 
-  the fix(es):
+  the fix(es): we add "if" to the first else, and remove "{"
 */
 
 let userName = 'indrogo';
 
 if (userName.length < 3) {
-  console.log('too short');
-} else (userName.length < 5) {
-  console.log('just right');
-} else {
+
+    console.log('too short');
+     } 
+     else if (userName.length < 5)
+       console.log('just right');
+ 
+else {
   console.log('too long');
 }
 

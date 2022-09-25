@@ -3,20 +3,21 @@
 console.log('--- in execution phase ---');
 
 /*
-  environment:
+  environment: Chrome browser
 
-  name:
-  message:
+  name: ReferenceError 
+  message: assignment to undeclared variable welf
 
-  location:
+  location: 20:6
 
-  life cycle:
+  life cycle: execution phase
 
-  the mistake:
+  the mistake:  welf is not defined
 
-  the fix(es):
+  the fix(es): initialised
 */
 
-welf = 'ingrad';
+welf = 'ingrad'; 
+//we have to initialised welf variable on line 20 column 6
 
 console.log(welf);
